@@ -62,7 +62,7 @@ function carros(arr, num) {
   // Exemplo: recebendo [56, 12, 168, 66] deve retornar 168
   // EXTRA: Pesquisar uma maneira iniciar com o menor número possível (dica: não é zero)
   
-  const valores = [56, 12, 168, 66]
+ /* const valores = [56, 12, 168, 66]
 
   function maiorEncontrado(maior){
       for (let i = 0; i < maior.length; i++){
@@ -72,7 +72,18 @@ function carros(arr, num) {
          return valores
       }
   }
-  console.log(maiorEncontrado(valores))
+  console.log(maiorEncontrado(valores))*/ // buscar entender esse codigo
+  
+  const numeromax = [56, 12, 168, 66]
+
+  function getMaxOfArray(numArray) {
+    return Math.max.apply(null, numArray);
+}
+console.log(getMaxOfArray(numeromax))
+
+/*var elMaximo = [4,3,6,9].sort(function(a, b){return b - a;})[0]
+
+console.log(elMaximo)*/ // entender aqui tambem
 
   // 6) Crie uma função que receba uma array de números inteiros e retorne o menor valor e o maior valor da array, no seguinte formato: "o menor número é X e o maior número é Y".
   // Exemplo, recebendo [5, 37, 18, 59, 12, -5] a função deve retornar "o maior número é 59 e o menor número é -5"
